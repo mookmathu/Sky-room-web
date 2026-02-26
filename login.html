@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Skymeet room | Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<link rel="shortcut icon" href="images/sky.png" type="favicon">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/fonts/iconic/css/material-design-iconic-font.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/vendor/animate/animate.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/vendor/css-hamburgers/hamburgers.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/vendor/animsition/css/animsition.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/vendor/select2/select2.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/vendor/daterangepicker/daterangepicker.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/css/util.css">
+	<link rel="stylesheet" type="text/css" href="template/Login_v4/css/main.css">
+	<!--===============================================================================================-->
+	<!-- Font style -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+
+	<script src="login.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+	<style>
+		*,
+		.alert-validate::before {
+			font-family: "Poppins", "Itim", cursive !important;
+			font-weight: 300;
+			font-style: normal;
+		}
+	</style>
+
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('template/Login_v4/images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form class="login100-form validate-form" id="loginForm">
+					<div class="div-img">
+						<img class="cloud-img" src="images/sky.png" alt="">
+					</div>
+
+					<span class="login100-form-title p-b-49">
+						ลงชื่อเข้าใช้งาน
+					</span>
+
+					<div class="wrap-input100 validate-input m-b-23" data-validate="กรุณากรอกชื่อผู้ใช้งาน">
+						<span class="label-input100">ชื่อผู้ใช้งาน</span>
+						<input class="input100" type="text" id="username" name="username" placeholder="กรอกชื่อผู้ใช้งาน">
+						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="กรุณากรอกรหัสผ่าน">
+						<span class="label-input100">รหัสผ่าน</span>
+						<input class="input100" type="password" id="password" name="password" placeholder="กรอกรหัสผ่าน">
+						<span class="focus-input100" data-symbol="&#xf190;"></span>
+					</div>
+
+					<div class="text-right p-t-8 p-b-31">
+						<!-- <a href="#">
+							Forgot password?
+						</a> -->
+					</div>
+
+					<div class="text-center incorrect-password" style="display: none;" id="incorrect-password">
+						<p>ชื่อผู้ใช้งานหรือรหัสผ่านไม่ถูกต้อง</p>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" type="submit">
+								เข้าสู่ระบบ
+							</button>
+						</div>
+					</div>
+
+					<div class="div-img">
+						<img class="logo-img" src="images/skymeet_room_logo.png" alt="">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div id="dropDownSelect1"></div>
+
+	<div id="message"></div>
+
+
+	<!--===============================================================================================-->
+	<script src="template/Login_v4/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="template/Login_v4/vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="template/Login_v4/vendor/bootstrap/js/popper.js"></script>
+	<script src="template/Login_v4/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="template/Login_v4/vendor/select2/select2.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="template/Login_v4/vendor/daterangepicker/moment.min.js"></script>
+	<script src="template/Login_v4/vendor/daterangepicker/daterangepicker.js"></script>
+	<!--===============================================================================================-->
+	<script src="template/Login_v4/vendor/countdowntime/countdowntime.js"></script>
+	<!--===============================================================================================-->
+	<script src="template/Login_v4/js/main.js"></script>
+
+</body>
+</html>

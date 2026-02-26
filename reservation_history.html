@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="shortcut icon" href="images/sky.png" type="favicon">
+
+    <title>Skymeet room | Reservation history</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="template/templatemo_568_digimedia/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="template/templatemo_568_digimedia/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="template/templatemo_568_digimedia/assets/css/templatemo-digimedia-v3.css">
+    <link rel="stylesheet" href="template/templatemo_568_digimedia/assets/css/animated.css">
+    <link rel="stylesheet" href="template/templatemo_568_digimedia/assets/css/owl.css">
+
+    <!-- Font style -->
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span class="dot2"></span>
+                <span class="dot3"></span>
+                <span class="dot4"></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="images/skymeet_room_logo.png" alt="logo">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="index.html">หน้าแรก</a></li>
+                            <li class="scroll-to-section"><a href="index.html">ระเบียบการใช้งาน</a></li>
+                            <li class="scroll-to-section"><a href="reservation.html">จองห้องประชุม</a>
+                            </li>
+                            <li class="scroll-to-section"><a href="reservation_history.html"
+                                    class="active">ประวัติการจอง</a></li>
+                            <li class="scroll-to-section"><a href="contact.html">ติดต่อเรา</a></li>
+                            <li class="scroll-to-section"><a href="login.html">ออกจากระบบ</a></li>
+                            <li class="scroll-to-section">
+                                <div class="border-first-button"><a href="reservation_history.html" id="username-login">ยินดีต้อนรับ</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div id="history" class="contact-us section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading wow fadeIn" data-wow-duration="0.75s" data-wow-delay="0.5s">
+                        <h6>Reservation history</h6>
+                        <h4>ประวัติการจอง</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+                <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                    <form id="contact" action="" method="post">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="fill-form">
+                                    <div class="row">
+                                        <div class="tablerounededCorner" id="reservation-table"></div>
+                                    </div>
+
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-lg-3">
+                                            <fieldset>
+                                                <!-- <button type="submit" id="form-submit"
+                                                    class="main-button">ฉันเข้าใจแล้ว</button> -->
+                                            </fieldset>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="dashboard" class="contact-us section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading wow fadeIn" data-wow-duration="0.75s" data-wow-delay="0.5s">
+                        <h6>Dashboard</h6>
+                        <h4>แดชบอร์ด</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+                <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                    <form id="contact" action="" method="post">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="fill-form">
+                                    <div class="row">
+                                        <h3>ภาพรวมทั้งหมด</h3>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="info-post">
+                                                <div class="dashboard-card">
+                                                    <div>
+                                                        <h3 class="dashboard-h3" id="members"></h3>
+                                                        <label for="">Members</label>
+                                                    </div>
+
+                                                    <div>
+                                                        <i class="fa fa-users dashboard-icon"
+                                                            style="color: burlywood;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="info-post">
+                                                <div class="dashboard-card">
+                                                    <div>
+                                                        <h3 class="dashboard-h3" id="list"></h3>
+                                                        <label for="">Reservations</label>
+                                                    </div>
+
+                                                    <div>
+                                                        <i class="fa fa-clipboard dashboard-icon"
+                                                            style="color: mediumpurple;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div class="col-lg-3">
+                                            <div class="info-post">
+                                                <div class="dashboard-card">
+                                                    <div>
+                                                        <h3 class="dashboard-h3">4</h3>
+                                                        <label for="">Reserved rooms</label>
+                                                    </div>
+
+                                                    <div>
+                                                        <i class="fa fa-times-circle-o dashboard-icon"
+                                                            style="color: crimson;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+
+                                        <div class="col-lg-4">
+                                            <div class="info-post">
+                                                <div class="dashboard-card">
+                                                    <div>
+                                                        <h3 class="dashboard-h3" id="popular"></h3>
+                                                        <label for="">Popular room</label>
+                                                    </div>
+
+                                                    <div>
+                                                        <i class="fa fa-line-chart dashboard-icon"
+                                                            style="color: chartreuse;"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="row d-flex justify-content-center">
+                                        <hr class="blue-line">
+                                    </div> -->
+
+                                </div>
+
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-lg-3">
+                                        <fieldset>
+                                            <!-- <button type="submit" id="form-submit"
+                                                    class="main-button">ฉันเข้าใจแล้ว</button> -->
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright © <span id="current-year"></span> Mathurada Meepan. All Rights Reserved.
+                        <br>Information Technology, Kasetsart University.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style type="text/css">
+        footer {
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .row {
+            margin-top: 20px;
+        }
+
+        .blue-line {
+            width: 60%;
+            height: 2px !important;
+            background-color: deepskyblue;
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="template/templatemo_568_digimedia/vendor/jquery/jquery.min.js"></script>
+    <script src="template/templatemo_568_digimedia/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="template/templatemo_568_digimedia/assets/js/owl-carousel.js"></script>
+    <script src="template/templatemo_568_digimedia/assets/js/animation.js"></script>
+    <script src="template/templatemo_568_digimedia/assets/js/imagesloaded.js"></script>
+    <script src="template/templatemo_568_digimedia/assets/js/custom.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="reservation_history.js"></script>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('current-year').textContent = currentYear;
+    </script>
+
+</body>
+
+</html>

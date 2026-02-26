@@ -1,0 +1,41 @@
+version: '3.7'
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: mysql_db
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: webdb
+    ports:
+      - "9906:3306" # เชื่อมต่อพอร์ต 3306
+    volumes:
+      - backend_1_mysql_data:/var/lib/mysql  # ใช้ volume ที่ถูกต้องจากการแสดงผลของ docker volume ls
+    networks:
+      - weblab820
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: db  # ชื่อบริการของ MySQL ใน Docker Compose
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "9907:80"  # พอร์ตที่เข้าถึง phpmyadmin
+    depends_on:
+      - db
+    networks:
+      - weblab820
+    restart: always
+
+networks:
+  weblab820:  # กำหนด network ให้ใช้ bridge
+    driver: bridge
+
+volumes:
+  backend_1_mysql_data:  # ใช้ชื่อ volume ที่ถูกต้องจาก docker volume ls
+    driver: local

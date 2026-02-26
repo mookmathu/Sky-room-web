@@ -1,0 +1,149 @@
+* {
+    font-family: "Poppins", "Itim", cursive; /* กำหนดฟอนต์ให้เว็บ Poppins ฟอนต์ภาษาอังกฤษ Itim คือฟอนต์ภาษาไทย */
+    font-weight: 300;
+    font-style: normal;
+}
+
+.dot {
+    background-color: #BFD7ED !important;
+}
+
+.dot2 {
+    background-color: #003B73 !important;
+}
+
+.dot3 {
+    background-color: #0074B7 !important;
+}
+
+.dot4 {
+    background-color: #60A3D9 !important;
+}
+
+img.img-calendar {
+    width: 60%;
+}
+
+.fill-form {
+    padding: 80px 60px 80px 60px;
+}
+
+.rule-content {
+    text-align: left;
+    font-size: 20px;
+}
+
+.div-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cloud-img {
+    width: 30%;
+}
+
+.logo-img {
+    width: 25%;
+}
+
+.overall {
+    margin-bottom: 10px;
+}
+
+.dashboard-h3 {
+    color: #4da6e7;
+}
+
+.dashboard-card {
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dashboard-icon {
+    display: inline-block;
+    font: normal normal normal 40px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+}
+
+.incorrect-password p {
+    color: red;
+    margin-bottom: 20px;
+}
+
+#p_message_success {
+    color: lime;
+    margin-top: 20px;
+}
+
+.btn-delete {
+    width: 50% !important;
+    margin-top: 0px !important;
+}
+
+
+/* ===== Table rounded ===== */
+.tablerounededCorner {
+    border: 1px solid #0C2D48;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.roundedTable {
+    border-collapse: collapse;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+.roundedTable th,
+.roundedTable td {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.roundedTable th {
+    text-align: center;
+    background-color: #4da6e7;
+    font-weight: bold;
+    color: white;
+}
+
+.roundedTable tr {
+    text-align: center;
+}
+
+.roundedTable tr:last-child td {
+    border-bottom: none;
+}
+
+.roundedTable tbody {
+    border-color: transparent;
+    border-style: none;
+}
+
+.roundedTable tr:nth-child(odd) {
+    background-color: #dbedfa;
+}
+
+.table-bordered>:not(caption)>*>* {
+    border-width: 0 0px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+    --bs-table-accent-bg: none;
+}
+
+/* ===== End table rounded ===== */
+
